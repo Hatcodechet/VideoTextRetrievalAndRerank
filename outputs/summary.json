@@ -1,0 +1,8 @@
+{
+  "num_queries": 290,
+  "num_videos": 290,
+  "top_k_retrieval": 50,
+  "final_mode": "rerank",
+  "alpha": 0.75,
+  "retrieval_hit_rate_at_k": 0.503448275862069
+}

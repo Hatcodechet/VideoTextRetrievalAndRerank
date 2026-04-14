@@ -85,3 +85,24 @@ python /workspace/retrieval_rerank/run_retrieval_rerank.py \
   --final-mode fusion \
   --alpha 0.75
 ```
+
+## Summarize Metrics
+
+Write IR-style metrics such as `Hit@1`, `Hit@5`, `Hit@10`, `Hit@50`, `mean_rank`, and `median_rank`:
+
+```bash
+cd /workspace/Qwen3-VL-Embedding
+source .venv/bin/activate
+
+python /workspace/retrieval_rerank/summarize_metrics.py \
+  --results-json /workspace/retrieval_rerank/outputs/final_results.json \
+  --output-json /workspace/retrieval_rerank/outputs/final_results_metrics.json
+```
+
+For stage-1 retrieval metrics:
+
+```bash
+python /workspace/retrieval_rerank/summarize_metrics.py \
+  --results-json /workspace/retrieval_rerank/outputs/stage1_retrieval.json \
+  --output-json /workspace/retrieval_rerank/outputs/stage1_retrieval_metrics.json
+```

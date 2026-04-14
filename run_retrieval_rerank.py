@@ -219,6 +219,20 @@ def save_json(path: Path, payload: Any) -> None:
         json.dump(payload, f, ensure_ascii=False, indent=2)
 
 
+def ground_truth_matches(candidate_relative_path: str, ground_truth_video: Optional[str]) -> bool:
+    if not ground_truth_video:
+        return False
+
+    gt = str(Path(ground_truth_video))
+    candidate = str(Path(candidate_relative_path))
+    if candidate == gt:
+        return True
+
+    # Query annotations for anomaly videos may omit the leading
+    # "Testing_Anomaly_Videos/" prefix used by the indexed corpus.
+    return candidate.endswith("/" + gt)
+
+
 def process_queries(
     queries: List[Dict[str, Any]],
     video_records: List[Dict[str, Any]],
@@ -266,6 +280,18 @@ def process_queries(
                 ],
             }
         )
+
+        gt_video = query.get("ground_truth_video")
+        gt_stage1_rank = None
+        gt_stage1_hit = False
+        if gt_video:
+            for candidate in candidates:
+                if ground_truth_matches(candidate["relative_path"], gt_video):
+                    gt_stage1_rank = candidate["visual_rank"]
+                    gt_stage1_hit = True
+                    break
+        stage1_results[-1]["ground_truth_in_top_k"] = gt_stage1_hit
+        stage1_results[-1]["ground_truth_stage1_rank"] = gt_stage1_rank
 
         rerank_scores = reranker.process(
             {
@@ -315,13 +341,11 @@ def process_queries(
         for final_rank, candidate in enumerate(final_candidates, start=1):
             candidate["final_rank"] = final_rank
 
-        gt_video = query.get("ground_truth_video")
         gt_final_rank = None
         gt_in_top_k = False
         if gt_video:
-            gt_video = str(Path(gt_video))
             for candidate in final_candidates:
-                if candidate["relative_path"] == gt_video:
+                if ground_truth_matches(candidate["relative_path"], gt_video):
                     gt_final_rank = candidate["final_rank"]
                     gt_in_top_k = True
                     break

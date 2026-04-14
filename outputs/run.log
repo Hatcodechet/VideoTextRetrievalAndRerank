@@ -292,3 +292,66 @@ You're using a Qwen2TokenizerFast tokenizer. Please note that with a fast tokeni
 [Query 234/290] In the commodity production workshop, workers reprocess the commodities on the production line.
 [Query 235/290] In the processing plant, two female workers are sorting products.
 [Query 236/290] At night, the roadside of the community is full of cars, and some cars are driving on the street of the community.
+[Query 237/290] At the supermarket checkout counter, a black-clothed male cashier is cashing out a blue-clothed female.
+[Query 238/290] In the daytime supermarket, a group of four people entered the supermarket to buy goods.
+[Query 239/290] In the shopping street, a child is learning to ride a bicycle, and a bald man next to him occasionally gives instructions.
+[Query 240/290] At the trade fair, a black-clothed woman was sitting in front of the booth, and people in the aisle communicated enthusiastically.
+[Query 241/290] Outside the house, a man in stripes is loading cargo into the trunk of a van.
+[Query 242/290] Four men one after another took the items they wanted to buy from the supermarket shelves.
+[Query 243/290] At the cashier of the supermarket, two male cashiers check out the customers.
+[Query 244/290] At the door of the house, a man in black came out to smoke and made an insulting gesture.
+[Query 245/290] On the streets during the day, cars are parked on the side of the road, cars are passing on the street, and pedestrians are walking on the side of the road.
+[Query 246/290] In the restaurant, two women are dining, and three waiters are standing at the bar.
+[Query 247/290] On the viewing platform, some people sat to rest, while others got up and left.
+[Query 248/290] In commercial streets, people look around to buy goods.
+[Query 249/290] On the side of the road, it started to rain, people walked with umbrellas, and cars stopped on the side of the road.
+[Query 250/290] The camera lens is moving. At the crossroads, there was a constant stream of vehicles, and some vehicles were waiting for the traffic lights to clear.
+[Query 251/290] At the crossroads during the day, there is a constant stream of vehicles, and some vehicles are waiting for the traffic lights.
+[Query 252/290] At the intersection next to the 711 supermarket, vehicles passed in order, and some vehicles were waiting for traffic lights.
+[Query 253/290] At the crossroads during the day, vehicles were moving in order, and there was a police car passing the intersection.
+[Query 254/290] At the crossroads during the day, there is a constant stream of vehicles, and some vehicles are waiting for the traffic lights.
+[Query 255/290] At the crossroads during the day, vehicles are moving in an orderly manner, and vehicles in the distant direction are waiting for traffic lights to clear.
+[Query 256/290] During the day, vehicles pass the traffic light intersection in an orderly manner, and a yellow bus is waiting for the traffic light.
+[Query 257/290] During the day, there was a constant stream of vehicles, driving in different directions.
+[Query 258/290] The vehicles on the bridge passed in sequence, and many vehicles were parked under the bridge.
+[Query 259/290] Without a car on the road under the bridge, a person crossed the road on a bicycle.
+[Query 260/290] A silver car waited for the traffic light at the intersection and did not pass until the green light.
+[Query 261/290] Many cars waited for the traffic lights at the intersection.
+[Query 262/290] During the day, there are many cars parked next to the house, and cars pass by on the road.
+[Query 263/290] At the crossroads, vehicles were moving in an orderly manner, and some vehicles were waiting for the traffic lights.
+[Query 264/290] During the day, at a traffic light intersection, vehicles in one direction pass in an orderly manner, and vehicles in the other direction are waiting for a red light.
+[Query 265/290] In the circular office area, people are walking occasionally.
+[Query 266/290] There are many people passing through the aisles of the commercial street, and some people are selling things.
+[Query 267/290] At night, there are many cars parked in the parking lot, and vehicles and pedestrians pass.
+[Query 268/290] At night, someone in the computer room went out with goods.
+[Query 269/290] A woman in white clothes got on the bus, and the bus drove slowly.
+[Query 270/290] In the shop, a man and a boy were talking to other people in the shop.
+[Query 271/290] Two men came to the shop to exchange coupons for things.
+[Query 272/290] In the shop, a man in white is walking, and a man sits at a table calling and playing on a computer.
+[Query 273/290] At the gas station, many car owners are filling up their gas tank
+[Query 274/290] Someone came in to buy something in the convenience store at the gas station.
+[Query 275/290] In a convenience store, a man in green stands in front of a shelf, picks and pays for the goods.
+[Query 276/290] In the supermarket shelf area, a man in a hat climbed up a ladder to inspect something.
+[Query 277/290] People come and go in the hall, and some take the escalator.
+[Query 278/290] On the road, the students are in a relay race, sometimes cars pass by, and someone sits on the sidewalk to warm up.
+[Query 279/290] On the road, the students are in a relay race, sometimes cars pass by, and someone sits on the sidewalk to warm up.
+[Query 280/290] In an electronics store, a salesperson in white clothes is introducing products to customers.
+[Query 281/290] In retail stores, men in powder coats are showing various banknotes to customers.
+[Query 282/290] In the electronic product store, some people were walking around to visit the electronic products, and a white-clothed salesperson was sorting and introducing the products.
+[Query 283/290] On the side of the street, there were many cars parked, and a white car reversed into the parking space.
+[Query 284/290] Under the two electric automatic doors of the mall, people kept passing through.
+[Query 285/290] At the exhibition, some people sat together to communicate, and some people walked around to visit.
+[Query 286/290] At night, a man ran and kicked the rearview mirrors of several cars on the side of the road.
+[Query 287/290] In the evening, a man in a black hat knocked on the glass door of the store several times with a hammer.
+[Query 288/290] A fat man with a mask smashed the glass door of the store with a throwing object.
+[Query 289/290] At night, a person sprayed an unknown white liquid on the hood of a roadside car.
+[Query 290/290] A shirtless man deliberately knocked down multiple shelves in the store.
+[Done] Results saved to /workspace/retrieval_rerank/outputs
+{
+  "num_queries": 290,
+  "num_videos": 290,
+  "top_k_retrieval": 50,
+  "final_mode": "rerank",
+  "alpha": 0.75,
+  "retrieval_hit_rate_at_k": 0.503448275862069
+}
