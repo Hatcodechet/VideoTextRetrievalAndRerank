@@ -434,7 +434,7 @@ def main() -> None:
             "description_json": str(args.description_json),
             "output_dir": str(args.output_dir),
             "embedding_model": args.embedding_model,
-            "reranker_model": args.reranker_model,
+            "reranker_model": args.reranker_model,``
             "top_k_retrieval": args.top_k_retrieval,
             "final_mode": args.final_mode,
             "alpha": args.alpha,

@@ -1,0 +1,11 @@
+nohup: ignoring input
+[Init] Loading embedding model...
+`torch_dtype` is deprecated! Use `dtype` instead!
+[Init] Loading reranker model...
+[Cache] Loaded corpus embeddings from /workspace/retrieval_rerank/outputs/video_embeddings.pt
+[Query 1/290] A man in a hat beat a white dog in the yard with a stick outside the railing.
+qwen-vl-utils using decord to read video.
+You're using a Qwen2TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+/workspace/Qwen3-VL-Embedding/.venv/lib/python3.11/site-packages/transformers/tokenization_utils_base.py:2914: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+[Query 2/290] The man beat a black dog on the side of the road with his fist.

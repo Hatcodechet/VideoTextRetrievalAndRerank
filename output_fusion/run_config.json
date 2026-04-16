@@ -1,0 +1,16 @@
+{
+  "video_root": "/workspace/test",
+  "query_json": "/workspace/ucf_crime_ar_test.json",
+  "description_json": "/workspace/video_description.json",
+  "output_dir": "/workspace/retrieval_rerank/output_fusion",
+  "embedding_model": "Qwen/Qwen3-VL-Embedding-2B",
+  "reranker_model": "Qwen/Qwen3-VL-Reranker-2B",
+  "top_k_retrieval": 50,
+  "final_mode": "fusion",
+  "alpha": 0.75,
+  "fps": 2.0,
+  "max_frames": 64,
+  "embedding_batch_size": 6,
+  "torch_dtype": "bfloat16",
+  "attn_implementation": null
+}

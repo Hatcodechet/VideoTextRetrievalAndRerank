@@ -95,8 +95,8 @@ cd /workspace/Qwen3-VL-Embedding
 source .venv/bin/activate
 
 python /workspace/retrieval_rerank/summarize_metrics.py \
-  --results-json /workspace/retrieval_rerank/outputs/final_results.json \
-  --output-json /workspace/retrieval_rerank/outputs/final_results_metrics.json
+  --results-json /workspace/retrieval_rerank/output_fusion/final_results.json \
+  --output-json /workspace/retrieval_rerank/output_fusion/final_results_metrics.json
 ```
 
 For stage-1 retrieval metrics:

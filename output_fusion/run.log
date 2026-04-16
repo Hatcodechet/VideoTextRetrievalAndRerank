@@ -1,0 +1,357 @@
+nohup: ignoring input
+[Init] Loading embedding model...
+`torch_dtype` is deprecated! Use `dtype` instead!
+[Init] Loading reranker model...
+[Embedding] Encoding videos 1-6/290
+qwen-vl-utils using decord to read video.
+[Embedding] Encoding videos 7-12/290
+[Embedding] Encoding videos 13-18/290
+[Embedding] Encoding videos 19-24/290
+[Embedding] Encoding videos 25-30/290
+[Embedding] Encoding videos 31-36/290
+[Embedding] Encoding videos 37-42/290
+[Embedding] Encoding videos 43-48/290
+[Embedding] Encoding videos 49-54/290
+[Embedding] Encoding videos 55-60/290
+[Embedding] Encoding videos 61-66/290
+[Embedding] Encoding videos 67-72/290
+[Embedding] Encoding videos 73-78/290
+[Embedding] Encoding videos 79-84/290
+[Embedding] Encoding videos 85-90/290
+[Embedding] Encoding videos 91-96/290
+[Embedding] Encoding videos 97-102/290
+[Embedding] Encoding videos 103-108/290
+[Embedding] Encoding videos 109-114/290
+[Embedding] Encoding videos 115-120/290
+[Embedding] Encoding videos 121-126/290
+[Embedding] Encoding videos 127-132/290
+[Embedding] Encoding videos 133-138/290
+[Embedding] Encoding videos 139-144/290
+[Embedding] Encoding videos 145-150/290
+[Embedding] Encoding videos 151-156/290
+[Embedding] Encoding videos 157-162/290
+[Embedding] Encoding videos 163-168/290
+[Embedding] Encoding videos 169-174/290
+[Embedding] Encoding videos 175-180/290
+[Embedding] Encoding videos 181-186/290
+[Embedding] Encoding videos 187-192/290
+[Embedding] Encoding videos 193-198/290
+[Embedding] Encoding videos 199-204/290
+[Embedding] Encoding videos 205-210/290
+[Embedding] Encoding videos 211-216/290
+[Embedding] Encoding videos 217-222/290
+[Embedding] Encoding videos 223-228/290
+[Embedding] Encoding videos 229-234/290
+[Embedding] Encoding videos 235-240/290
+[Embedding] Encoding videos 241-246/290
+[Embedding] Encoding videos 247-252/290
+[Embedding] Encoding videos 253-258/290
+[Embedding] Encoding videos 259-264/290
+[Embedding] Encoding videos 265-270/290
+[Embedding] Encoding videos 271-276/290
+[Embedding] Encoding videos 277-282/290
+[Embedding] Encoding videos 283-288/290
+[Embedding] Encoding videos 289-290/290
+[Cache] Saved corpus embeddings to /workspace/retrieval_rerank/output_fusion/video_embeddings.pt
+[Query 1/290] A man in a hat beat a white dog in the yard with a stick outside the railing.
+You're using a Qwen2TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+/workspace/Qwen3-VL-Embedding/.venv/lib/python3.11/site-packages/transformers/tokenization_utils_base.py:2914: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+[Query 2/290] The man beat a black dog on the side of the road with his fist.
+[Query 3/290] In the police station, two police officers escorted a prisoner in a white shirt and clashed.
+[Query 4/290] A man in a vest was lying on the ground in the house and was handcuffed by several policemen.
+[Query 5/290] The white car halted on the side of the road, and the policeman in the police car behind shot and arrested the people coming out of the car.
+[Query 6/290] Several criminals who were sabotaging ATMs were spotted by the police and caught.
+[Query 7/290] A man in black armed with a gun in the room was shot by a police officer who came in from the door and was eventually caught by several policemen.
+[Query 8/290] In the middle of the night, a man in a hat lit the Christmas tree under the eaves.
+[Query 9/290] At night, a man set fire next to a car on the side of the road.
+[Query 10/290] In the evening, two men wearing helmets shattered the glass of the car on the side of the road, and then set the cab of the car on fire.
+[Query 11/290] A teenager in the elevator used a lighter to burn the camera in the elevator.
+[Query 12/290] On the back seat of the bus, a pile of newspapers was lit by a teenager.
+[Query 13/290] At night, a man lit a car parked in the yard with a flammable liquid.
+[Query 14/290] In the room, a man in a hat lit a Christmas pine tree in the corner with a lighter.
+[Query 15/290] At night, a man in a hat lit a car on the side of the road with a flammable liquid and ran away quickly.
+[Query 16/290] At night, a man wearing a hat poured liquid on the ground and lit it, and the fire spread rapidly.
+[Query 17/290] A man carrying a schoolbag was beaten by a group of people in the house.
+[Query 18/290] A man in striped clothes on the bed was beaten by a man with a fist, and then beaten by the man with a stick.
+[Query 19/290] In the yard where many motorcycles are parked, three men beat a man in a pink shirt with a stick.
+[Query 20/290] A man in a white shirt kicked the door open with his foot and entered the house with his companion.
+[Query 21/290] A man jumped over the table, opened the drawer and hid something in his pocket.
+[Query 22/290] At night, beside the car, a man wearing a helmet was trying to open the door of the house, but he flew away without success.
+[Query 23/290] The white truck broken down the door, and the two men carried the motorcycle inside the door to the car.
+[Query 24/290] In the evening, a shirtless man squatted under the cash register, rummaged and took away some items.
+[Query 25/290] In the evening, several masked men walked in through the window and took the computer in the house to their companions outside the window.
+[Query 26/290] In the evening, a man in black tried to open a wooden door, but failed and fled.
+[Query 27/290] At night, a man squatted open a window and got in.
+[Query 28/290] In the evening, a bald man turned into the cash register, handed the things to his companion, and turned out.
+[Query 29/290] A man broke in and took the money from the cash register.
+[Query 30/290] By the lawn during the day, a man stopped in front of the door and finally entered the house.
+[Query 31/290] The men in hats who got out of the car pried open the door with sticks and broke in.
+[Query 32/290] In the evening, a man took out the barbecue beside the shop and flew away.
+[Query 33/290] At night, a black car caught fire in the gas station, and people ran away quickly.
+[Query 34/290] The fire burst out from the door, and the two firefighters at the door were burned.
+[Query 35/290] There was a sudden explosion on the street at night, and heavy smoke obscured the camera.
+[Query 36/290] There was a huge explosion in the far distance of the main road with vehicles, thick smoke and dust.
+[Query 37/290] There was an explosion behind the woods, and black smoke rose.
+[Query 38/290] An explosion occurred on a driving bus, and white smoke came out of the bus.
+[Query 39/290] At night, in the gas station, a tanker truck exploded, accompanied by fire, and many equipment were knocked down.
+[Query 40/290] An explosion occurred in a church, accompanied by fire and smoke.
+[Query 41/290] A motorcycle caught fire suddenly, people around were scattered, and the owner put out the fire.
+[Query 42/290] A group of people on the street at night, among them, the pockets of the people leaning on the cars caught fire and exploded.
+[Query 43/290] A huge explosion inside the gas station caused the ceiling to fall and dust was everywhere.
+[Query 44/290] In the equipment room, during the inspection by the inspector, explosions and fires were ejected from the equipment.
+[Query 45/290] A huge fire and mushroom cloud erupted behind the house.
+[Query 46/290] The mobile phone in the hands of a sitting man in the house suddenly caught fire and gave out white smoke.
+[Query 47/290] There was a sudden explosion in the far side of the street, smoke hit, and the glass of the roadside shop was shattered.
+[Query 48/290] At the gas station, the car behind the woman in the blue shirt burst into flames.
+[Query 49/290] The factory in the distance exploded suddenly, and thick black smoke swept along with a huge fire, and the fire was burning.
+[Query 50/290] Inside the office, there was an explosion and fire in a distant house, and many papers were scattered and scattered.
+[Query 51/290] A group of children threw firecrackers into the sewer and exploded, producing huge shock waves and smoke.
+[Query 52/290] There was a small explosion in a restaurant with some smoke.
+[Query 53/290] The far part of the alley suddenly exploded, producing a fireball. The explosion destroyed the surrounding things. Pedestrians and dogs run away.
+[Query 54/290] There was a fight in the area waiting for the subway, and several men were beating each other.
+[Query 55/290] In the underground passage, a woman knocked a bag grabbing man to the ground.
+[Query 56/290] In the passage, a man with a female companion knocked down two men with his fists.
+[Query 57/290] At the door, a security uncle was fighting with a gunman.
+[Query 58/290] A group of people in the factory were fighting, and someone was knocked to the ground.
+[Query 59/290] At a crossroads at night, a car collided with a motorcycle and the motorcycle driver was knocked into flight.
+[Query 60/290] A bus rushed to the side of the road and crashed a pillar and then stopped.
+[Query 61/290] At an intersection, a straight white car hit the black car turning left.
+[Query 62/290] At the crossing of the zebra crossing, an out-of-control car ran into the sidewalk after hitting a cyclist.
+[Query 63/290] A red bus pushed the silver car on the side of the road into the yard and hit the pedestrians.
+[Query 64/290] At the crossroads, a blue truck collided with a car.
+[Query 65/290] At the intersection, two high-speed SUVs collided, and one was knocked out and knocked down a passerby.
+[Query 66/290] A high-speed SUV in the distance rushed to the side of the road after a collision. Passers-by were scattered.
+[Query 67/290] At the crossroads, the straight-ahead car ran into a pickup truck that was approaching vertically.
+[Query 68/290] A black car hit a motorcycle that had just started, and the person was knocked to the ground.
+[Query 69/290] A speeding white car smashed the stationary motorcycle in the middle of the road.
+[Query 70/290] A black pickup truck collided with a silver car.
+[Query 71/290] A black car knocked down multiple people who were riding across the road to the ground.
+[Query 72/290] A black car that had just pulled out of the gate was overturned by a white car coming at high speed.
+[Query 73/290] A speeding motorcycle hit the car in the middle of the road, and the motorcycle driver was bounced off.
+[Query 74/290] A high-speed motorcycle hit the car at the intersection, and the motorcycle slid on the ground.
+[Query 75/290] An out of control black car ran into two moving motorcycles one after another.
+[Query 76/290] At the intersection, a left-turning car was pushed out by a straight black car for a long time.
+[Query 77/290] A large truck with a red head collided with a train on the railway, and the carriage was knocked away.
+[Query 78/290] An out of control white car rushed to the sidewalk and hit a passerby.
+[Query 79/290] At night, the two cars collided violently in the middle of the crossroad and crashed into the side of the road.
+[Query 80/290] A speeding black motorcycle hit the white van in the middle of the intersection, and the motorcycle driver was hit to the side of the road.
+[Query 81/290] A motorcycle hit the van that was turning around in the middle of the road. The motorcycle caught fire and the two people on the motorcycle fell to the ground.
+[Query 82/290] A head-covered man armed a gun outside the door dragged and robbed a man in a suit.
+[Query 83/290] Several men robbed people in a white car that had just stopped.
+[Query 84/290] A man ran into the yard to take away the bag of the woman who had just got out of the black car, and was knocked to the ground by the woman.
+[Query 85/290] A man carrying a black bag was threatened by two men who came over on a motorcycle and handed the phone to them.
+[Query 86/290] Two black-clothed men in hats used guns and knives to coerce the cashier to hand over cash and snatched some merchandise.
+[Query 87/290] In the parking lot at night, a man shot at several others.
+[Query 88/290] A man tried to assault a police officer and was shot to the ground by a policeman with a gun.
+[Query 89/290] On the grass, a man in a blue shirt was holding a gun, and many people shot each other and ran.
+[Query 90/290] In the supermarket, a man in black lay on the ground and shot in the distance.
+[Query 91/290] A man wanted to shoot at the driver in the cab, but was knocked to the ground by the driver.
+[Query 92/290] Two men in helmets were shot and killed by police outside the door after they robbed the store.
+[Query 93/290] At night, the man in the hat fled after firing into the door in the corridor.
+[Query 94/290] A man on the road assaulted the driver in a police car and was shot and killed by another policeman.
+[Query 95/290] In the shop, a man in a hat who was about to rob was shot down by a man next to him.
+[Query 96/290] At night, two car robbers were scared away by a man who opened fire.
+[Query 97/290] In the private garage, the driver in the car shot someone who came in from the outside.
+[Query 98/290] In the lounge, a man in red had a gun battle with a man in stripes. The man in stripes was shot and fell by the wall.
+[Query 99/290] A white-clothed man fired a shot at the man wearing a helmet inside the house, and the glass door was shot to pieces.
+[Query 100/290] At night, a man in a hat shot at someone on the side of the road.
+[Query 101/290] In front of the counter, a white-haired old man shot down a masked man who came in from outside.
+[Query 102/290] A man coming out of the door was shot to the ground by a man in white with a pistol behind him.
+[Query 103/290] At the gate, the robbers robbed the woman's bag and knocked the woman to the ground.
+[Query 104/290] After a man got off the black car on the road, he fired at the red SUV in front of him.
+[Query 105/290] A man shot at a black car parked on the side of the road from a moving car.
+[Query 106/290] At the entrance of the store, two men armed with guns robbed a man and opened fire.
+[Query 107/290] Next to the ATM, a man in a blue shirt shot at the man in a black shirt and broke the glass.
+[Query 108/290] When the police were arresting people in the yard, they had a fierce gun battle with a man who came out of the car, and the man is shot down by police.
+[Query 109/290] In the office, a uniformed man started a gunfire with a gunman who broke in from outside, and the gunman was shot to the ground.
+[Query 110/290] A man in a yellow shirt and a man in a white shirt hid the laptop in the store under his clothes.
+[Query 111/290] In front of the counter, an old man secretly put his hand into the pocket of the elderly man next to him under the cover of his clothes, and then left.
+[Query 112/290] In the shop, a man quickly put the merchandise into the clothes of his male companion.
+[Query 113/290] In the clothing store, two women stuffed their clothes into their bags twice, while the clerk was leaving.
+[Query 114/290] A little girl secretly stuffed the goods on the shelf into a school bag under the cover of a woman.
+[Query 115/290] The man in white stole the mobile phone from the table while the clerk left.
+[Query 116/290] A woman in a robe and backpack hides the goods on the shelf in her clothes.
+[Query 117/290] A man in a suit carrying a bag took the phone behind the counter while the clerk was leaving.
+[Query 118/290] A man in a green shirt lay on the counter and took the goods from the counter, while the clerk was leaving.
+[Query 119/290] A woman in a black robe took the goods from the counter while the male clerk walked to the window from the counter.
+[Query 120/290] A white man and woman in a supermarket, where the man hides a number of items on the shelf in his clothes.
+[Query 121/290] A man in a hat took the goods from the glass counter and left.
+[Query 122/290] In the supermarket, a fatter woman hid the goods on the shelf in her bag.
+[Query 123/290] Three men in black stuffed the clothes in the clothing store into white bags.
+[Query 124/290] The man in white stood by the counter, stuffed the merchandise into his clothes, turned and left.
+[Query 125/290] In the clothing store, after the woman left, the man in blue picked up a small object on the table and put it in his trouser pocket.
+[Query 126/290] The woman in the skirt hides the goods at the counter in the skirt under the cover of her male companion.
+[Query 127/290] A man snatched the gold jewelry from the counter while the two shop assistants were not paying attention, and then ran away.
+[Query 128/290] A man moved a large item of merchandise out of the store.
+[Query 129/290] A man in a suit hid the notebook on the desk in his computer bag.
+[Query 130/290] A man in a dark shirt took out the mobile phone from the counter and stuffed it into his pocket.
+[Query 131/290] A man on the phone got into the white car behind and left after a while.
+[Query 132/290] A man with a backpack and a hat squatted behind the motorcycle and took the contents of the car and left quickly.
+[Query 133/290] Three or four men in hats levered open the door of a car in the yard, got in and drove away.
+[Query 134/290] On the side of the road during the day, a man took the contents of the car from the back of the car while the owner was in front of the car.
+[Query 135/290] A man wearing a helmet and backpack broke into the railing door and tried to push the motorcycle out of the yard. He was then driven away by the homeowner with a shovel.
+[Query 136/290] A dog kept sticking its head into the trash can in the corridor, and eventually overturned the trash can.
+[Query 137/290] At a T-shaped intersection, traffic was constantly flowing, and a light-colored car drove into the shop on the side of the road
+[Query 138/290] In a dark office environment, a little boy took off his glasses, rubbed his eyes, covered his ears with his hands, and looked forward.
+[Query 139/290] At the cashier of the supermarket, a black man was paying the bill, and then the cashier was giving him change.
+[Query 140/290] In the aisle of the mall, a mother walked by with two children, and two women walked by.
+[Query 141/290] In the airport lobby, a few people hurried past, and a man in black had been sitting on his seat.
+[Query 142/290] At the cashier of the supermarket, two fat men came over to check out, one of them was wearing a security uniform.
+[Query 143/290] In the supermarket, many men and women shuttle among them, and the ladies are still wearing black veils.
+[Query 144/290] In the office, everyone worked in an orderly manner. One of the men picked up the phone.
+[Query 145/290] In an office hall, a man went out with a ladder, and the rest were working normally.
+[Query 146/290] There are five cars parked on the side of the road, and there are constantly passing by. A red car pulled over and parked, and a white car turned around and left.
+[Query 147/290] At an intersection, there are constantly many motorcycles passing through the intersection.
+[Query 148/290] At the cashier of the bakery, a customer is paying the bill. After the cashier makes change, the customer takes away the purchased items.
+[Query 149/290] In the bakery, four staff members are busy with the orders of four customers.
+[Query 150/290] At the work stations in the office, colleagues are working hard and sometimes communicating with each other.
+[Query 151/290] On the city's two-way multi-lane roads, there is a constant flow of traffic.
+[Query 152/290] On the street, a man in white got into the car with something and drove away by himself.
+[Query 153/290] At the cashier of the supermarket, the woman in red is answering the phone, and the man in blue is counting the money in the machine.
+[Query 154/290] A man in a blue shirt walked around the counter and then turned off the light.
+[Query 155/290] At the supermarket cashier, multiple channels are simultaneously performing checkout and cashier operations.
+[Query 156/290] At the gate of a place, people are constantly coming in and out, and the automatic door is also working normally.
+[Query 157/290] In the company's workstations, some are working hard and some are communicating with each other.
+[Query 158/290] Two men checkout at the cash register of an electronic supermarket chain, while a red man is selecting products.
+[Query 159/290] On the road, a liftable engineering vehicle was reversing.
+[Query 160/290] In the indoor aisles, many people walked quickly across the corridor.
+[Query 161/290] On the street, there were three trucks and a few cars parked on the side of the road, and people in twos and threes walked by.
+[Query 162/290] On the streets where many cars were parked, people and vehicles kept passing by.
+[Query 163/290] In a shop that was not yet open, people came in one after another and stood in the shop to communicate.
+[Query 164/290] On the night shift road, there were many vehicles driving in both directions, most of which were red taxis, and a white mud tanker passed by.
+[Query 165/290] Under the outdoor shed, five men were communicating, and two men were doing the work at hand.
+[Query 166/290] There were seven cars parked in the parking lot. A man in white came out of the store and drove a sports car out of the parking lot.
+[Query 167/290] At the endless flow of T-shaped intersection, many motorcycles shuttled back and forth, a white car parked on the side of the road, the driver went to the nearby store to carry things and put them in the trunk of the car.
+[Query 168/290] At the gas station, a woman and a gray-haired old man refueled their car. After that, the woman drove out of the gas station, and the old man returned to the car after entering the house.
+[Query 169/290] In a jewelry store, a woman wearing a helmet is choosing goods, and the clerk is serving her.
+[Query 170/290] A man in glasses and a man in a red hat communicated from time to time and paced back and forth in the room.
+[Query 171/290] At the cashier counter of the convenience store, the cashier is skilled in the operations of cash register, change and packing for customers.
+[Query 172/290] At the gate of the office, eight people walked out of the steps, and one entered the office.
+[Query 173/290] On the street, two strong men walked into the store, and an old man with white hair was walking on the street.
+[Query 174/290] In the classroom, many children are taking lessons seriously, and a teacher in pink clothes is giving a lecture on the podium.
+[Query 175/290] A group of young guys are playing basketball on the basketball court.
+[Query 176/290] In the supermarket, three men are choosing the goods they want.
+[Query 177/290] At the front desk of a workplace, a man came up to pick up a brochure and asked the front desk staff.
+[Query 178/290] A bald man communicated with two staff members at the front desk of the hotel, followed by a black bodyguard.
+[Query 179/290] At the gas station, first a green car and a black car were refueling, and then a white car came to refuel.
+[Query 180/290] At the cashier of the supermarket, a man in black is checking out, two men in light-colored clothes are choosing goods, and a staff in white shirt and a female staff in the front desk are serving them.
+[Query 181/290] In the office, two staff members are serving a man carrying a backpack.
+[Query 182/290] At the exit of the supermarket, everyone pushed their shopping carts out of the supermarket with the goods they bought.
+[Query 183/290] At a window in the supermarket, two men in white shirts were buying goods one after the other, and there was a male staff member in the store.
+[Query 184/290] At the supermarket checkout counter, there are three cashiers who are doing operations such as checking cash and finding change for customers.
+[Query 185/290] In the waiting hall, a man in blue clothes is looking at the newspaper in his hand, and a child in green clothes next to him is also looking at the newspaper.
+[Query 186/290] At the front desk next to the glass door, the women sitting at the front desk talked to a few people standing outside the front desk while talking on the phone. A man in a white shirt stands by the front desk from time to time.
+[Query 187/290] At night intersections, various cars and trucks pass in an orderly manner according to traffic lights.
+[Query 188/290] On the street, there are 3 cars parked on the side of the road, cars and people on foot constantly pass through the intersection, and children on bicycles pass through the intersection.
+[Query 189/290] At the bar where drinks are sold, three men are studying the equipment and communicating with each other.
+[Query 190/290] At the gas station, six cars were refueled with the help of the staff, and then they drove out of the gas station one after another.
+[Query 191/290] On the street, cars drove in an orderly manner, and pedestrians passed the road
+[Query 192/290] At the gas station, a BMW car and a sports car were refueling and then drove out of the gas station.
+[Query 193/290] On the road next to the shop building, there are many cars passing by and pedestrians walking on the sidewalk.
+[Query 194/290] In the supermarket, a man in blue is waiting for a woman in white to choose goods, and customers continue to choose goods.
+[Query 195/290] In a residential area, a car was parked on the side of the road, and a man in blue stuck the card in his hand to the windshield of the car.
+[Query 196/290] At the gate of a large supermarket, there are many people coming in and out.
+[Query 197/290] At the rainy T-shaped intersection, there is already some water on the road, and people on motorcycles pass by quickly wearing ponchos.
+[Query 198/290] Several groups of people in the fruit shop are communicating, and customers come in from time to time to pick fruits.
+[Query 199/290] In a lawn aisle, a man walked into the house through the aisle, and two women in floral clothes also walked through the aisle. There was a child left in the aisle.
+[Query 200/290] A man in yellow and a man in red were watching the door. Then a car came and the two opened the door. After the car left, they closed the door again.
+[Query 201/290] In the office, six men sat around a round table and discussed.
+[Query 202/290] In the office hall, two staff members are working, two people are collating materials, and two women outside the window are consulting business. Later, more and more people are consulting.
+[Query 203/290] A silver Ford pickup truck is entering the car wash workshop.
+[Query 204/290] In the bowling alley, several people are playing bowling, and there is a group of spectators below.
+[Query 205/290] In a street selling clothes, there is a constant flow of people.
+[Query 206/290] In the commodity processing workshop, workers are reprocessing the commodities on the assembly line.
+[Query 207/290] At the crossroads, pedestrians cross the road on a zebra crossing, and vehicles pass in accordance with the traffic lights in an orderly manner.
+[Query 208/290] On the side of the road, three people chat together, and pedestrians pass by from time to time.
+[Query 209/290] In the lobby of the hotel's exit, people entered and exited in groups, staff pushing trolley.
+[Query 210/290] At the entrance of the elevator hall, people are waiting for the van, which will take people to different floors.
+[Query 211/290] During the day, there were a few cars parked on the street, and there were cars and gravel cars running on the road.
+[Query 212/290] At the supermarket checkout counter, the cashier in blue has been checking out customers.
+[Query 213/290] A white SUV and a blue car entered the garage one after the other.
+[Query 214/290] At the gate of the compound, a white van drove out of the compound during the day.
+[Query 215/290] In the office, a man in red communicates with a man in safety clothes.
+[Query 216/290] In the commercial street during the day, people are walking on the street.
+[Query 217/290] In the gate, there are three motorcycles parked, and two men want to unload the goods from the motorcycles.
+[Query 218/290] There were three stools in the room, one with a box on it, the other two were empty, and then a man came in.
+[Query 219/290] There were three stools in the room, one with a box on it, the other two were empty, and then a man came in with an empty box in his hand.
+[Query 220/290] Several people in the room sat around a round table and communicated. Two people were communicating face to face. The man in purple adjusted the camera.
+[Query 221/290] During the day, cars move in an orderly manner on the road.
+[Query 222/290] In the warehouse during the day, four people were carrying their own goods.
+[Query 223/290] At the supermarket checkout counter, there are three cashiers checking out customers.
+[Query 224/290] On the spacious road, cars drove on the road in an orderly manner.
+[Query 225/290] At the cash register of the supermarket, multiple channels are used for cash registering in parallel.
+[Query 226/290] On the streets during the day, the roadside is full of cars, and cars pass by from time to time.
+[Query 227/290] On the streets at night, the roadside was full of cars, and there was a person walking on the crosswalk.
+[Query 228/290] Inside the house, a woman in orange clothes is sitting on a stool with a laptop on her lap.
+[Query 229/290] In a pink room, a woman in blue clothes sits at a table operating a computer.
+[Query 230/290] At the entrance of a shopping mall, people came in and out.
+[Query 231/290] In a large classroom, a man stands on the podium, and a man sits below.
+[Query 232/290] In the daytime, a blue car parked at the door of the house, and a mother and daughter walked into the house.
+[Query 233/290] In a decoration shop, a group of people are looking at decorations.
+[Query 234/290] In the commodity production workshop, workers reprocess the commodities on the production line.
+[Query 235/290] In the processing plant, two female workers are sorting products.
+[Query 236/290] At night, the roadside of the community is full of cars, and some cars are driving on the street of the community.
+[Query 237/290] At the supermarket checkout counter, a black-clothed male cashier is cashing out a blue-clothed female.
+[Query 238/290] In the daytime supermarket, a group of four people entered the supermarket to buy goods.
+[Query 239/290] In the shopping street, a child is learning to ride a bicycle, and a bald man next to him occasionally gives instructions.
+[Query 240/290] At the trade fair, a black-clothed woman was sitting in front of the booth, and people in the aisle communicated enthusiastically.
+[Query 241/290] Outside the house, a man in stripes is loading cargo into the trunk of a van.
+[Query 242/290] Four men one after another took the items they wanted to buy from the supermarket shelves.
+[Query 243/290] At the cashier of the supermarket, two male cashiers check out the customers.
+[Query 244/290] At the door of the house, a man in black came out to smoke and made an insulting gesture.
+[Query 245/290] On the streets during the day, cars are parked on the side of the road, cars are passing on the street, and pedestrians are walking on the side of the road.
+[Query 246/290] In the restaurant, two women are dining, and three waiters are standing at the bar.
+[Query 247/290] On the viewing platform, some people sat to rest, while others got up and left.
+[Query 248/290] In commercial streets, people look around to buy goods.
+[Query 249/290] On the side of the road, it started to rain, people walked with umbrellas, and cars stopped on the side of the road.
+[Query 250/290] The camera lens is moving. At the crossroads, there was a constant stream of vehicles, and some vehicles were waiting for the traffic lights to clear.
+[Query 251/290] At the crossroads during the day, there is a constant stream of vehicles, and some vehicles are waiting for the traffic lights.
+[Query 252/290] At the intersection next to the 711 supermarket, vehicles passed in order, and some vehicles were waiting for traffic lights.
+[Query 253/290] At the crossroads during the day, vehicles were moving in order, and there was a police car passing the intersection.
+[Query 254/290] At the crossroads during the day, there is a constant stream of vehicles, and some vehicles are waiting for the traffic lights.
+[Query 255/290] At the crossroads during the day, vehicles are moving in an orderly manner, and vehicles in the distant direction are waiting for traffic lights to clear.
+[Query 256/290] During the day, vehicles pass the traffic light intersection in an orderly manner, and a yellow bus is waiting for the traffic light.
+[Query 257/290] During the day, there was a constant stream of vehicles, driving in different directions.
+[Query 258/290] The vehicles on the bridge passed in sequence, and many vehicles were parked under the bridge.
+[Query 259/290] Without a car on the road under the bridge, a person crossed the road on a bicycle.
+[Query 260/290] A silver car waited for the traffic light at the intersection and did not pass until the green light.
+[Query 261/290] Many cars waited for the traffic lights at the intersection.
+[Query 262/290] During the day, there are many cars parked next to the house, and cars pass by on the road.
+[Query 263/290] At the crossroads, vehicles were moving in an orderly manner, and some vehicles were waiting for the traffic lights.
+[Query 264/290] During the day, at a traffic light intersection, vehicles in one direction pass in an orderly manner, and vehicles in the other direction are waiting for a red light.
+[Query 265/290] In the circular office area, people are walking occasionally.
+[Query 266/290] There are many people passing through the aisles of the commercial street, and some people are selling things.
+[Query 267/290] At night, there are many cars parked in the parking lot, and vehicles and pedestrians pass.
+[Query 268/290] At night, someone in the computer room went out with goods.
+[Query 269/290] A woman in white clothes got on the bus, and the bus drove slowly.
+[Query 270/290] In the shop, a man and a boy were talking to other people in the shop.
+[Query 271/290] Two men came to the shop to exchange coupons for things.
+[Query 272/290] In the shop, a man in white is walking, and a man sits at a table calling and playing on a computer.
+[Query 273/290] At the gas station, many car owners are filling up their gas tank
+[Query 274/290] Someone came in to buy something in the convenience store at the gas station.
+[Query 275/290] In a convenience store, a man in green stands in front of a shelf, picks and pays for the goods.
+[Query 276/290] In the supermarket shelf area, a man in a hat climbed up a ladder to inspect something.
+[Query 277/290] People come and go in the hall, and some take the escalator.
+[Query 278/290] On the road, the students are in a relay race, sometimes cars pass by, and someone sits on the sidewalk to warm up.
+[Query 279/290] On the road, the students are in a relay race, sometimes cars pass by, and someone sits on the sidewalk to warm up.
+[Query 280/290] In an electronics store, a salesperson in white clothes is introducing products to customers.
+[Query 281/290] In retail stores, men in powder coats are showing various banknotes to customers.
+[Query 282/290] In the electronic product store, some people were walking around to visit the electronic products, and a white-clothed salesperson was sorting and introducing the products.
+[Query 283/290] On the side of the street, there were many cars parked, and a white car reversed into the parking space.
+[Query 284/290] Under the two electric automatic doors of the mall, people kept passing through.
+[Query 285/290] At the exhibition, some people sat together to communicate, and some people walked around to visit.
+[Query 286/290] At night, a man ran and kicked the rearview mirrors of several cars on the side of the road.
+[Query 287/290] In the evening, a man in a black hat knocked on the glass door of the store several times with a hammer.
+[Query 288/290] A fat man with a mask smashed the glass door of the store with a throwing object.
+[Query 289/290] At night, a person sprayed an unknown white liquid on the hood of a roadside car.
+[Query 290/290] A shirtless man deliberately knocked down multiple shelves in the store.
+[Done] Results saved to /workspace/retrieval_rerank/output_fusion
+{
+  "num_queries": 290,
+  "num_videos": 290,
+  "top_k_retrieval": 50,
+  "final_mode": "fusion",
+  "alpha": 0.75,
+  "retrieval_hit_rate_at_k": 0.9793103448275862
+}

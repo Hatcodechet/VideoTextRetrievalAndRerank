@@ -1,0 +1,171 @@
+{
+  "results_json": "/workspace/retrieval_rerank/output_fusion/final_results.json",
+  "rank_key": "final_rank",
+  "overall": {
+    "num_queries": 290,
+    "num_matches": 284,
+    "num_misses": 6,
+    "hit_at_1": 0.5620689655172414,
+    "hit_at_5": 0.8344827586206897,
+    "hit_at_10": 0.9,
+    "hit_at_50": 0.9793103448275862,
+    "mean_rank": 3.3028169014084505,
+    "median_rank": 1.0
+  },
+  "per_category": {
+    "Abuse": {
+      "num_queries": 2,
+      "num_matches": 2,
+      "num_misses": 0,
+      "hit_at_1": 0.5,
+      "hit_at_5": 1.0,
+      "hit_at_10": 1.0,
+      "hit_at_50": 1.0,
+      "mean_rank": 1.5,
+      "median_rank": 1.5
+    },
+    "Arrest": {
+      "num_queries": 5,
+      "num_matches": 5,
+      "num_misses": 0,
+      "hit_at_1": 0.6,
+      "hit_at_5": 1.0,
+      "hit_at_10": 1.0,
+      "hit_at_50": 1.0,
+      "mean_rank": 1.8,
+      "median_rank": 1
+    },
+    "Arson": {
+      "num_queries": 9,
+      "num_matches": 9,
+      "num_misses": 0,
+      "hit_at_1": 0.5555555555555556,
+      "hit_at_5": 0.7777777777777778,
+      "hit_at_10": 0.8888888888888888,
+      "hit_at_50": 1.0,
+      "mean_rank": 4.111111111111111,
+      "median_rank": 1
+    },
+    "Assault": {
+      "num_queries": 3,
+      "num_matches": 3,
+      "num_misses": 0,
+      "hit_at_1": 0.6666666666666666,
+      "hit_at_5": 1.0,
+      "hit_at_10": 1.0,
+      "hit_at_50": 1.0,
+      "mean_rank": 1.6666666666666667,
+      "median_rank": 1
+    },
+    "Burglary": {
+      "num_queries": 13,
+      "num_matches": 13,
+      "num_misses": 0,
+      "hit_at_1": 0.38461538461538464,
+      "hit_at_5": 0.9230769230769231,
+      "hit_at_10": 0.9230769230769231,
+      "hit_at_50": 1.0,
+      "mean_rank": 2.5384615384615383,
+      "median_rank": 2
+    },
+    "Explosion": {
+      "num_queries": 21,
+      "num_matches": 21,
+      "num_misses": 0,
+      "hit_at_1": 0.7619047619047619,
+      "hit_at_5": 1.0,
+      "hit_at_10": 1.0,
+      "hit_at_50": 1.0,
+      "mean_rank": 1.8095238095238095,
+      "median_rank": 1
+    },
+    "Fighting": {
+      "num_queries": 5,
+      "num_matches": 5,
+      "num_misses": 0,
+      "hit_at_1": 0.8,
+      "hit_at_5": 1.0,
+      "hit_at_10": 1.0,
+      "hit_at_50": 1.0,
+      "mean_rank": 1.2,
+      "median_rank": 1
+    },
+    "RoadAccidents": {
+      "num_queries": 23,
+      "num_matches": 23,
+      "num_misses": 0,
+      "hit_at_1": 0.391304347826087,
+      "hit_at_5": 0.8260869565217391,
+      "hit_at_10": 0.8695652173913043,
+      "hit_at_50": 1.0,
+      "mean_rank": 4,
+      "median_rank": 3
+    },
+    "Robbery": {
+      "num_queries": 5,
+      "num_matches": 5,
+      "num_misses": 0,
+      "hit_at_1": 0.6,
+      "hit_at_5": 1.0,
+      "hit_at_10": 1.0,
+      "hit_at_50": 1.0,
+      "mean_rank": 2,
+      "median_rank": 1
+    },
+    "Shooting": {
+      "num_queries": 23,
+      "num_matches": 22,
+      "num_misses": 1,
+      "hit_at_1": 0.4782608695652174,
+      "hit_at_5": 0.782608695652174,
+      "hit_at_10": 0.8695652173913043,
+      "hit_at_50": 0.9565217391304348,
+      "mean_rank": 3.5454545454545454,
+      "median_rank": 1.5
+    },
+    "Shoplifting": {
+      "num_queries": 21,
+      "num_matches": 20,
+      "num_misses": 1,
+      "hit_at_1": 0.3333333333333333,
+      "hit_at_5": 0.6190476190476191,
+      "hit_at_10": 0.8095238095238095,
+      "hit_at_50": 0.9523809523809523,
+      "mean_rank": 5.55,
+      "median_rank": 3.0
+    },
+    "Stealing": {
+      "num_queries": 5,
+      "num_matches": 5,
+      "num_misses": 0,
+      "hit_at_1": 0.8,
+      "hit_at_5": 0.8,
+      "hit_at_10": 1.0,
+      "hit_at_50": 1.0,
+      "mean_rank": 2.4,
+      "median_rank": 1
+    },
+    "Testing_Normal_Videos_Anomaly": {
+      "num_queries": 150,
+      "num_matches": 146,
+      "num_misses": 4,
+      "hit_at_1": 0.5933333333333334,
+      "hit_at_5": 0.82,
+      "hit_at_10": 0.8866666666666667,
+      "hit_at_50": 0.9733333333333334,
+      "mean_rank": 3.3972602739726026,
+      "median_rank": 1.0
+    },
+    "Vandalism": {
+      "num_queries": 5,
+      "num_matches": 5,
+      "num_misses": 0,
+      "hit_at_1": 0.8,
+      "hit_at_5": 1.0,
+      "hit_at_10": 1.0,
+      "hit_at_50": 1.0,
+      "mean_rank": 1.6,
+      "median_rank": 1
+    }
+  }
+}
