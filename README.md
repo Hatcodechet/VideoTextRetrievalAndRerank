@@ -107,6 +107,7 @@ python /workspace/retrieval_rerank/summarize_metrics.py \
   --output-json /workspace/retrieval_rerank/outputs/stage1_retrieval_metrics.json
 ```
 ## Results
+alpha * visual_score + (1.0 - alpha) * rerank_score
 
 | Cấu hình                  | Alpha | Hit@1    | Hit@5    | Hit@10   | Mean Rank |
 |---------------------------|-------|----------|----------|----------|-----------|
